@@ -6,6 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(ParseIntFromChar.howOld("0 year old"));
+        System.out.println(MultiplyingTwoNumbers.multiply(2,2));
     }
 }
