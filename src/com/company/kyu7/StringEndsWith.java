@@ -1,4 +1,4 @@
-package com.company.kyu8;
+package com.company.kyu7;
 
 public class StringEndsWith {
     public static boolean solution(String str, String ending) {
