@@ -5,14 +5,14 @@ import java.util.List;
 
 public class SumsOfOddNumbers {
     public static void main(String[] args) {
-        System.out.println(rowSumOddNumbers(2));
+        System.out.println(rowSumOddNumbers(4));
     }
     public static int rowSumOddNumbers(int n) {
         int sum = 0;
         List<Integer> oddNumbers = new ArrayList<>();
         int countOfInts = 0;
         for(int i = 1; i <= n; i++) {
-            countOfInts += n - (n - i);
+            countOfInts += i;
         }
         int number = 0;
         for(int i = 1; i <= countOfInts; i++) {
