@@ -5,33 +5,26 @@ public class FixStringCase {
         System.out.println(solve("coDE"));
     }
     public static String solve(final String str) {
+        String result = str;
         int upperCounter = 0;
         int lowerCounter = 0;
-        char[] charArray = new char[str.length()];
+        
         for(int i = 0; i < str.length(); i++) {
-            charArray[i] = str.charAt(i);
-        }
-        for(int i = 0; i < str.length(); i++) {
-            if(Character.isUpperCase(charArray[i])) {
+            
+            if(Character.isUpperCase(result.charAt(i))) {
                 upperCounter++;
             }
-            else if(Character.isLowerCase(charArray[i])) {
+            else if(Character.isLowerCase(result.charAt(i))) {
                 lowerCounter++;
             }
         }
-        if(upperCounter > lowerCounter) {
-            for(int i = 0; i < str.length(); i++) {
-                charArray[i] = Character.toUpperCase(charArray[i]);
-            }
-        } else {
-            for(int i = 0; i < str.length(); i++) {
-                charArray[i] = Character.toLowerCase(charArray[i]);
-            }
-        }
-        String convertedString = new String("");
-        for(int i = 0; i < str.length(); i++) {
-            convertedString += charArray[i];
-        }
-        return convertedString;
+        result = (upperCounter > lowerCounter) ? result.toUpperCase() : result.toLowerCase();
+//        if(upperCounter > lowerCounter) {
+//            result = result.toUpperCase();
+//        } else {
+//            result = result.toLowerCase();
+//        }
+      
+        return result;
     }
 }
