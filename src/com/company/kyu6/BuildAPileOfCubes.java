@@ -11,11 +11,12 @@ public class BuildAPileOfCubes {
             numberOfCubes++;
             sum += (numberOfCubes * numberOfCubes * numberOfCubes);
         }
-        if(sum == m) {
-            return numberOfCubes;
-        }
-        else {
-            return -1;
-        }
+        return sum == m ? numberOfCubes : -1;
+//        if(sum == m) {
+//            return numberOfCubes;
+//        }
+//        else {
+//            return -1;
+//        }
     }
 }
