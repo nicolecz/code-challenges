@@ -26,7 +26,7 @@ public class ConvertISBN10ToISBN13 {
 
         int endDigit = sum % 10;
 
-        int checkDigit = 0;
+        int checkDigit;
 
         if(endDigit == 0) {
             checkDigit = endDigit;
