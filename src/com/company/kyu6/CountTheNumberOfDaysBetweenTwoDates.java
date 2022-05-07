@@ -2,7 +2,6 @@ package com.company.kyu6;
 
 import java.time.Duration;
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
 
 public class CountTheNumberOfDaysBetweenTwoDates {
     public static void main(String[] args) {
