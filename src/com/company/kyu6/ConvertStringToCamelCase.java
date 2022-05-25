@@ -16,7 +16,7 @@ public class ConvertStringToCamelCase {
         // add first element to StringBuilder
         newString.append(arr[0]);
 
-        // loop through each element in the array, check if first letter is capitalized
+        // loop through each element in the array
         // Capitalize the first letter of each word and add to string builder
         for(int i = 1; i < arr.length; i++) {
             newString.append(arr[i].substring(0,1).toUpperCase() + arr[i].substring(1));
